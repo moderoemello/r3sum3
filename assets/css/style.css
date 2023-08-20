@@ -1,0 +1,96 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #0563bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+
+.social-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-text {
+  margin-top: 10px;
+}
+
+.social-icon:hover {
+  transform: scale(2.2); /* Enlarge the icon on hover */
+  filter: drop-shadow(0 0 5px rgba(247, 0, 0, 0.5)); /* Add a shadow on hover */
+}
+
+
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/background.jpg") top right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+#main h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #45505b;
+}
+
+#main p {
+  color: #45505b;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#main p span {
+  font-size: 50px;
+  color: #ff00005e;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
